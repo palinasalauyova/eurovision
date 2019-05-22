@@ -57,8 +57,6 @@ public class ReadVotes {
 
 //	-----------------------------------------------------------------------------
 	public static void askCountry(String[] args) {
-		// System.out.println("Enter Country");
-		// country = sc.nextLine();
 		country = args[0];
 	}
 //		-----------------------------------------------------------------------------
@@ -90,13 +88,7 @@ public class ReadVotes {
 				}
 			}
 			countArray.add(count);
-			System.out.println("country: " + countryI + " voteFor: " + votesForI + " " + count);
 			filterVotes.add(new Vote(countryI, votesForI, count));
-		}
-
-		for (int i = 0; i < countArray.size(); i++) {
-			System.out.println("" + i + " (" + filterVotes.get(i).getCountry() + "): " + countArray.get(i)
-					+ " votesFor: " + filterVotes.get(i).getVoteFor());
 		}
 
 		givePoints(countArray, filterVotes);
