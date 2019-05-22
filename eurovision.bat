@@ -1,0 +1,1 @@
+java -cp .\target\* org.json.simple.ReadVotes %1 %2
